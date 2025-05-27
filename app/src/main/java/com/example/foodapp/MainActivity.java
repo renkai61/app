@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private MaterialButton btnLogin, btnRegister, btnAddFood, btnViewList;
     private FoodDatabaseHelper dbHelper;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         try {
+
             Log.d(TAG, "Starting initialization");
 
             // Step 1: 載入佈局
@@ -94,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     private void initToolbar() {
         try {
             Toolbar toolbar = findViewById(R.id.toolbar);
@@ -137,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
             tvExpiringItems = findViewById(R.id.tvExpiringItems);
             btnAddFood = findViewById(R.id.btnAddFood);
             btnViewList = findViewById(R.id.btnViewList);
+
 
             if (bottomNavigationView == null) {
                 Log.e(TAG, "Bottom Navigation View not found in layout");
