@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="食物名稱" />
+
+        <EditText
+            android:id="@+id/editType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="類型" />
+
+        <EditText
+            android:id="@+id/editQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="數量" />
+
+        <EditText
+            android:id="@+id/editExpiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="到期日（YYYY-MM-DD）" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="儲存" />
+
+    </LinearLayout>
+</ScrollView>

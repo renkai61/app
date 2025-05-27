@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:hint="帳號"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:hint="密碼"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="確認密碼"
+        android:inputType="textPassword" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegisterConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="註冊"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
